@@ -96,10 +96,9 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_linters = {'python': ['flake8']}
 
 " Airline
-let g:airline_left_sep  = ''
-let g:airline_right_sep = ''
+let g:airline_powerline_fonts = 1
+let g:airline_section_y = ""
 let g:airline#extensions#ale#enabled = 1
 let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
-let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
