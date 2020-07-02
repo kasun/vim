@@ -17,3 +17,4 @@ source ~/.vim/.vimrc
 9) install nerdfonts for nerdtree icons to work properly
 https://github.com/ryanoasis/nerd-fonts
 10) open nvim and run :PlugInstall
+11) Select Nerd tree font from Preferences for fonts to correctly work with nerdtree

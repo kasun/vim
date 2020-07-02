@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
 
 " Autocomplete
 Plug 'ncm2/ncm2'
@@ -18,6 +17,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -102,5 +103,3 @@ let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
-set guifont=Hack_Regular_Nerd_Font_Complete:h11
