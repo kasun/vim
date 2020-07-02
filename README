@@ -1,0 +1,19 @@
+Installation
+============
+
+1) Install vim-plug
+2) mkdir ~/.vim
+3) cd ~/.vim
+4) git clone
+5) brew install nvim
+6) pip install -r requirements.txt
+7) touch ~/.config/nvim/init.vim
+8) Enter following
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+source ~/.vim/.vimrc
+```
+9) install nerdfonts for nerdtree icons to work properly
+https://github.com/ryanoasis/nerd-fonts
+10) open nvim and run :PlugInstall
