@@ -12,7 +12,7 @@ Plug 'ncm2/ncm2-path'
 Plug 'ncm2/ncm2-jedi'
 
 " UI
-Plug 'chriskempson/base16-vim'
+Plug 'jonathanfilip/vim-lucius'
 
 Plug 'Yggdroot/indentLine'
 Plug 'w0rp/ale'
@@ -28,6 +28,10 @@ syntax enable
 filetype indent on
 
 " theme
+let g:lucius_style="light"
+let g:lucius_contrast="low"
+colo lucius
+set background=light
 
 set number  " always show current line number
 set smartcase  " better case-sensitivity when searching
