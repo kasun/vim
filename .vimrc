@@ -19,6 +19,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'ryanoasis/vim-devicons'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
@@ -69,7 +70,6 @@ set t_vb=
 
 " toggle nerdtree on ctrl+n
 map <C-n> :NERDTreeToggle<CR>
-map <C-t> :set nosplitright<CR>:TagbarToggle<CR>:set splitright<CR>
 autocmd vimenter * NERDTree
 autocmd VimEnter * wincmd p " automatically focus on the main window
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " close nerdtree automatically
@@ -102,3 +102,5 @@ let g:airline#extensions#ale#enabled = 1
 let airline#extensions#ale#error_symbol = 'E:'
 let airline#extensions#ale#warning_symbol = 'W:'
 let g:airline#extensions#tabline#enabled = 1
+
+let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
