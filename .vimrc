@@ -21,6 +21,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
 Plug 'majutsushi/tagbar'
 
+Plug 'psf/black', { 'tag': '19.10b0' }
+
 call plug#end()
 
 set encoding=utf8
@@ -67,6 +69,7 @@ set cpoptions+=x  " stay at seach item when <esc>
 set noerrorbells  " remove bells (i think this is default in neovim)
 set visualbell
 set t_vb=
+:set colorcolumn=120
 
 " toggle nerdtree on ctrl+n
 map <C-n> :NERDTreeToggle<CR>
@@ -87,6 +90,9 @@ augroup NCM2
 
 augroup END
 
+" run black on file save
+autocmd BufWritePre *.py execute ':Black'
+
 " Ale
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 'never'
@@ -104,3 +110,7 @@ let airline#extensions#ale#warning_symbol = 'W:'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+let g:impsort_line_continuation=1
+let g:impsort_textwidth=120
+
+let g:black_linelength = 120
