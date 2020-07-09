@@ -104,6 +104,7 @@ let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_linters = {'python': ['flake8']}
+let g:ale_python_flake8_options = '--ignore=W503,E231'
 nmap <silent> <C-a> <Plug>(ale_next_wrap)
 
 " Airline
