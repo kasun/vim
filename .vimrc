@@ -40,6 +40,8 @@ filetype indent on
 
 set background=light
 colorscheme solarized
+set t_Co=256
+let g:solarized_termcolors=256
 
 set number  " always show current line number
 set smartcase  " better case-sensitivity when searching
